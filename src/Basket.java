@@ -8,10 +8,16 @@ public class Basket {
         add("Молоко",91);
         add("Масло",134);
         print("Содержимой карзины: ");
-        System.out.println(getTotalPrice());
+        int totalPrice = getTotalPrice();
+        System.out.println("Общая стоимость товаров: " + totalPrice);
+
+        System.out.println();
         clear();
+        totalPrice = getTotalPrice();
+        System.out.println();
+
         print("Cодержимое карзины ");
-        System.out.println(getTotalPrice());
+        System.out.println("Общая стоимость товаров: " + totalPrice);
     }
 
     public static void add(String name, int price) {
